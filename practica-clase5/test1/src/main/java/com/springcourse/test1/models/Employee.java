@@ -2,6 +2,9 @@ package com.springcourse.test1.models;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "employee")
 public class Employee {
@@ -18,15 +21,16 @@ public class Employee {
     @Column(nullable = false)
     private String role;
 
+    @ManyToMany(mappedBy = "employees")
+    private List<Project> projects = new ArrayList<>();
+
     public Employee(String firstname, String lastname, String role) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.role = role;
     }
 
-    public Employee() {
-    }
-
+    public Employee() {}
 
     public Long getId() {
         return id;
@@ -58,5 +62,13 @@ public class Employee {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public List<Project> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(List<Project> projects) {
+        this.projects = projects;
     }
 }

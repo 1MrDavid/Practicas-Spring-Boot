@@ -1,36 +1,23 @@
-package com.springcourse.test1.models;
+package com.springcourse.test1.dto;
 
-import jakarta.persistence.*;
+import com.springcourse.test1.models.Task;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "task")
-public class Task {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class TaskDTO {
     private Long id;
-
-    @Column(nullable = false)
     private String description;
-
-    @Column(nullable = false)
     private String status;
-
-    @Column(nullable = false)
     private LocalDate dueDate;
+    private String assignedEmployee; // Solo el nombre del empleado, no toda la entidad
 
-    @ManyToOne
-    @JoinColumn(name = "project_id")
-    private Project project;
-
-    public Task(String description, String status, LocalDate dueDate) {
-        this.description = description;
-        this.status = status;
-        this.dueDate = dueDate;
+    // Constructor que recibe una entidad Task
+    public TaskDTO(Task task) {
+        this.id = task.getId();
+        this.description = task.getDescription();
+        this.status = task.getStatus();
+        this.dueDate = task.getDueDate();
     }
-
-    public Task() {}
 
     public Long getId() {
         return id;
@@ -64,11 +51,11 @@ public class Task {
         this.dueDate = dueDate;
     }
 
-    public Project getProject() {
-        return project;
+    public String getAssignedEmployee() {
+        return assignedEmployee;
     }
 
-    public void setProject(Project project) {
-        this.project = project;
+    public void setAssignedEmployee(String assignedEmployee) {
+        this.assignedEmployee = assignedEmployee;
     }
 }

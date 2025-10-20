@@ -21,18 +21,31 @@ public class Project {
     private LocalDate startdate;
 
     @Column(nullable = false)
-    private LocalDate endDate;
+    private LocalDate enddate;
 
     @OneToMany(mappedBy = "project", cascade = CascadeType.ALL)
     private List<Task> task = new ArrayList<>();
 
+    @ManyToMany
+    @JoinTable(
+            name = "project_employee",
+            joinColumns = @JoinColumn(name = "project_id"),
+            inverseJoinColumns = @JoinColumn(name = "employee_id")
+    )
+    private List<Employee> employees = new ArrayList<>();
+
     public Project(String name, LocalDate startdate, LocalDate endDate) {
         this.name = name;
         this.startdate = startdate;
-        this.endDate = endDate;
+        this.enddate = endDate;
     }
 
     public Project() {
+    }
+
+    public void addEmployee(Employee employee) {
+        this.employees.add(employee);
+        employee.getProjects().add(this);
     }
 
     public Long getId() {
@@ -68,10 +81,18 @@ public class Project {
     }
 
     public LocalDate getEndDate() {
-        return endDate;
+        return enddate;
     }
 
     public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
+        this.enddate = endDate;
+    }
+
+    public List<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(List<Employee> employees) {
+        this.employees = employees;
     }
 }
