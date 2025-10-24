@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2dd84fb-d29c-4772-80b8-b4c70534e91f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../practica-clase5/docker/postgres/init/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../practica-clase5/docker/postgres/init/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-clase5/test1/src/main/java/com/springcourse/test1/Test1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-clase5/test1/src/main/java/com/springcourse/test1/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practica-clase5/test1/src/main/java/com/springcourse/test1/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practica-clase5/test1/src/test/java/com/springcourse/test1/Test1ApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="34WnsssaDtMhpSqherw5NAC6jqn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2dd84fb-d29c-4772-80b8-b4c70534e91f" name="Changes" comment="" />
+      <created>1761338407263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761338407263</updated>
+    </task>
+    <servers />
+  </component>
+</project>
