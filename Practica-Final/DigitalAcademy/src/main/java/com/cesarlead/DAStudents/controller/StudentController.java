@@ -15,10 +15,15 @@ import com.cesarlead.DAStudents.dto.CrearEstudianteDTO;
 import com.cesarlead.DAStudents.dto.EstudianteDTO;
 import com.cesarlead.DAStudents.service.StudentService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("/api/v1/student")
+@Tag(name = "administracion-estudiantes", description = "administracion de estudiantes de la Digital Academy")
+@Slf4j
 public class StudentController {
 
   private final StudentService studentService;
@@ -27,6 +32,7 @@ public class StudentController {
     this.studentService = studentService;
   }
 
+  @Operation(summary = "Obtiene estudiante por ID")
   @GetMapping
   public ResponseEntity<List<EstudianteDTO>> getAllStudents() {
     return ResponseEntity.ok(studentService.getAll());
