@@ -11,11 +11,11 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "student")
-@Getter
-@Setter
+// @Getter
+// @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Data // Trae implicito getter y setter
 public class Student {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

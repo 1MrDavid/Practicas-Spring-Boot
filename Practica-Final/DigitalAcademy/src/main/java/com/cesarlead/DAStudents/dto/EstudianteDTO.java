@@ -7,5 +7,7 @@ public record EstudianteDTO(
     String nombre,
     String apellido,
     String email,
-    LocalDateTime fechaCreacion) {
+    LocalDateTime fechaCreacion
+)
+{
 }

@@ -1,8 +1,6 @@
-package com.cesarlead.DAStudents.config;
+package com.cesarlead.DACourses.config;
 
 public class AppConstant {
-
-    // Evitar magic string
 
     public static final String LOG_ENTERING_METHOD = "Entrando al método: {}";
     public static final String LOG_EXITING_METHOD = "Saliendo del método: {}";

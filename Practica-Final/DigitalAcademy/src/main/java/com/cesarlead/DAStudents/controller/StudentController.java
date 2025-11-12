@@ -40,6 +40,7 @@ public class StudentController {
 
   @GetMapping("/{id}")
   public ResponseEntity<EstudianteDTO> getStudentByID(@PathVariable Long id) {
+      log.debug("Consultando");
     return ResponseEntity.ok(studentService.findById(id));
   }
 

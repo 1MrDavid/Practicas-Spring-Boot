@@ -9,10 +9,10 @@ public class MapperStudent {
   public EstudianteDTO mapTopEstudianteDTO(Student estudiante) {
     return new EstudianteDTO(
         estudiante.getId(),
-            estudiante.getNombre(),
-            estudiante.getApellido(),
-            estudiante.getEmail(),
-            estudiante.getFechaCreacion()
+        estudiante.getNombre(),
+        estudiante.getApellido(),
+        estudiante.getEmail(),
+        estudiante.getFechaCreacion()
     );
   }
 }
