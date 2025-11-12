@@ -1,7 +1,6 @@
 package com.cesarlead.DACourses.exception;
 
-import com.cesarlead.DAStudents.dto.ErrorResponseDTO;
-import com.cesarlead.DAStudents.exception.ResourceNotFoundException;
+import com.cesarlead.DACourses.dto.ErrorResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
