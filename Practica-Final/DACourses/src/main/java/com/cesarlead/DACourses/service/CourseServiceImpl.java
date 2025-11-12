@@ -14,7 +14,7 @@ import com.cesarlead.DACourses.repository.CourseRepository;
 import jakarta.transaction.Transactional;
 
 @Service
-public class CourseServiceImpl {
+public class CourseServiceImpl implements CourseService {
 
   private final CourseRepository courseRepository;
   private final MapperCourse mapper;
@@ -27,6 +27,7 @@ public class CourseServiceImpl {
   }
 
   // Busca curso por id
+  @Override
   public CursoDTO findById(Long id) {
 
     Course course = courseRepository.findById(id)
@@ -36,6 +37,7 @@ public class CourseServiceImpl {
   }
 
   // Busca todos los cursos
+  @Override
   public List<CursoDTO> getAll() {
     return courseRepository.findAll().stream()
         .map(mapper::mapToCursoDTO)
@@ -44,6 +46,7 @@ public class CourseServiceImpl {
 
   // Crear nuevo curso
   @Transactional
+  @Override
   public CursoDTO createCourse(CursoDTO request) {
 
     Course curso = new Course();
