@@ -14,7 +14,7 @@ public class CustomErrorDecoder implements ErrorDecoder {
   public Exception decode(String methodKey, Response response) {
 
     // Error de busqueda
-    if (methodKey.contains("findById") && response.status() == 404) {
+    if (response.status() == 404) {
       return new ResourceNotFoundException("Estudiante no encontrado. Meotodo invocado: " + methodKey);
     }
 
