@@ -7,9 +7,7 @@ import com.cesarlead.DACourses.dto.EstudianteDTO;
 import com.cesarlead.DACourses.dto.InscripcionDTO;
 import com.cesarlead.DACourses.exception.ResourceNotFoundException;
 import com.cesarlead.DACourses.mapper.MapperEnrollment;
-import com.cesarlead.DACourses.model.Course;
 import com.cesarlead.DACourses.model.Enrollment;
-import com.cesarlead.DACourses.repository.CourseRepository;
 import com.cesarlead.DACourses.repository.EnrollmentRepository;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
@@ -17,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -69,4 +67,12 @@ public class EnrollmentServiceImpl implements EnrollmentService {
     Enrollment savedEnrollment = enrollmentRepository.save(inscripcion);
     return mapper.mapToInscripcionDTO(savedEnrollment);
   }
+
+  @Override
+  public List<Long> findEstudiantesFromCurso(Long cursoId) {
+      return enrollmentRepository.findEstudianteIdByCursoId(cursoId);
+  }
+
 }
+
+

@@ -35,7 +35,8 @@ public class StudentController {
   @Operation(summary = "Obtiene estudiante por ID")
   @GetMapping
   public ResponseEntity<List<EstudianteDTO>> getAllStudents() {
-    return ResponseEntity.ok(studentService.getAll());
+
+      return ResponseEntity.ok(studentService.getAll());
   }
 
   @GetMapping("/{id}")
