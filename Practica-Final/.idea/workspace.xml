@@ -4,38 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="808b77cd-3426-48de-a636-93653b680f38" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/client/CourseServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/client/StudentServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/config/AppConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/config/LoggingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/config/OpenApiConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/config/WebClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/controller/ProgressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/CrearEventoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/CursoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/ErrorResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/EstudianteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/EventoProgresoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/exception/DuplicateResourceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/exception/ExternalServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/exception/ServiceUnavailableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/mapper/MapperProgress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/model/Progress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/repository/ProgressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/client/EnrollmentServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/config/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/config/AppConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/controller/EnrollmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/controller/EnrollmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/repository/EnrollmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/repository/EnrollmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/resources/application-dev.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +26,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
-        <option value="Exception" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,10 +37,7 @@
   "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="35ZePkRatOB1TXu8QOLwQDEHHEE" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="35Zwcgup5GigbGLLlgtAHuWTbNM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,27 +52,16 @@
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/david/Desktop/Si/Repositorios/Practicas-Spring-Boot/Practica-Final/DAProgress/src/main/java/com/cesarlead/DAProgress/exception"
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAProgress\src\main\java\com\cesarlead\DAProgress\exception" />
-      <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAProgress\src\main\java\com\cesarlead\DAProgress\config" />
-      <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAProgress\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cesarlead.DAProgress.dto" />
-    </key>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="808b77cd-3426-48de-a636-93653b680f38" name="Changes" comment="" />
-      <created>1763322001736</created>
+      <changelist id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="" />
+      <created>1763330998117</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1763322001736</updated>
+      <updated>1763330998117</updated>
     </task>
     <servers />
   </component>

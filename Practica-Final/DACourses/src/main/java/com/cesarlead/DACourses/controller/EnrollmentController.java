@@ -43,4 +43,19 @@ public class EnrollmentController {
 
     return new ResponseEntity<>(createEnrollment, HttpStatus.CREATED);
   }
+
+  // Valida la inscripcion
+  @Operation(summary = "Valida la inscripcion de un estudiantes a un curso")
+  @ApiResponse(responseCode = "200", description = "Inscripcion creada")
+  @ApiResponse(responseCode = "404", description = "Inscripcion no encontrada")
+  @GetMapping("/exist/{cursoId}/{estudianteId}")
+  public ResponseEntity<Void> existEnrollment(
+    @PathVariable Long cursoId,
+    @PathVariable Long estudianteId
+  ) {
+
+    enrollmentService.existEnrollment(cursoId, estudianteId);
+
+    return ResponseEntity.ok().build();
+  }
 }

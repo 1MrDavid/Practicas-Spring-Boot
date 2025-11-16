@@ -1,6 +1,7 @@
 package com.cesarlead.DAProgress.service;
 
 import com.cesarlead.DAProgress.client.CourseServiceClient;
+import com.cesarlead.DAProgress.client.EnrollmentServiceClient;
 import com.cesarlead.DAProgress.client.StudentServiceClient;
 import com.cesarlead.DAProgress.config.AppConstant;
 import com.cesarlead.DAProgress.dto.CrearEventoDTO;
@@ -24,6 +25,7 @@ public class ProgressServiceImpl implements ProgressService {
 
     private final StudentServiceClient studentClient;
     private final CourseServiceClient courseClient;
+    private final EnrollmentServiceClient enrollmentClient;
     private final ProgressRepository progressRepository;
     private final MapperProgress mapper;
 
@@ -37,6 +39,9 @@ public class ProgressServiceImpl implements ProgressService {
 
         // Validar curso
         courseClient.getCourseByID(request.cursoId()).block();
+
+        // Validar inscripcion
+        enrollmentClient.validateEnrollment(request.cursoId(), request.estudianteId()).block();
 
         // Crear evento
         Progress progress = new Progress(

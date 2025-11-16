@@ -76,6 +76,17 @@ public class EnrollmentServiceImpl implements EnrollmentService {
       log.info(AppConstant.LOG_COURSE_STUDENTS_CONSULTED, cursoId);
       return enrollmentRepository.findEstudianteIdByCursoId(cursoId);
   }
+
+  @Override
+  public void existEnrollment(Long cursoId, Long estudianteId) {
+      log.info(AppConstant.LOG_ENROLLMENT_CONSULTING, estudianteId, cursoId);
+
+      if (!enrollmentRepository.existsByCursoIdAndEstudianteId(cursoId, estudianteId)) {
+          throw new ResourceNotFoundException("El estudiante " + estudianteId + " no está inscrito en el curso " + cursoId);
+      }
+
+      // Si no lanza excepcion la inscripcion existe
+  }
 }
 
 

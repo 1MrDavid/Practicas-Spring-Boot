@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DACourses" />
+        <module name="DAReports" />
         <module name="DAProgress" />
       </profile>
       <profile name="Annotation profile for DigitalAcademy" enabled="true">
@@ -25,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="DACourses" options="-parameters" />
       <module name="DAProgress" options="-parameters" />
+      <module name="DAReports" options="-parameters" />
       <module name="DigitalAcademy" options="-parameters" />
     </option>
   </component>

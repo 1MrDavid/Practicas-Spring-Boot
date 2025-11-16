@@ -9,4 +9,6 @@ public interface EnrollmentService {
     InscripcionDTO createEnrollment(CrearInscripcionDTO request);
 
     public List<Long> findEstudiantesFromCurso(Long cursoId);
+
+    void existEnrollment(Long cursoId, Long estudianteId);
 }

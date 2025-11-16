@@ -20,6 +20,9 @@ public class AppConstant {
     public static final String LOG_COURSE_STUDENTS_CONSULTED = "Consultado estudiantes del curso con ID: {}";
 
     public static final String LOG_ENROLLMENT_CREATED = "Inscripcion creada del estudiante con ID: {} para el curso con ID: {}";
+    public static final String LOG_ENROLLMENT_CONSULTING = "Consultando inscripcion del estudinate: {} para el curso: {}";
+    public static final String LOG_ENROLLMENT_NOT_FOUND = "Inscripcion del estudiante {} no encontrado en el curso {}";
+
 
     // Mensajes de controller y service de inscripciones
     public static final String LOG_VALIDATE_STUDENT = "Validando existencia del estudiante con ID: {}";
