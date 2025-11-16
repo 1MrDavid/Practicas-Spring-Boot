@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/DACourses/pom.xml" />
+        <option value="$PROJECT_DIR$/DAProgress/pom.xml" />
         <option value="$PROJECT_DIR$/DigitalAcademy/pom.xml" />
       </list>
     </option>
