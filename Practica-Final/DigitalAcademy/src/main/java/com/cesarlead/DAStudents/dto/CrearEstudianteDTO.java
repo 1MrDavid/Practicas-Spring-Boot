@@ -4,17 +4,22 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+import com.cesarlead.DAStudents.config.AppConstant;
+import jakarta.validation.constraints.Size;
+
 public record CrearEstudianteDTO(
-        @NotBlank(message = "El nombre no puede estar en blanco")
-        @NotNull(message = "El nombre es obligatorio")
+        @NotBlank(message = AppConstant.NOMBRE_NOT_BLANK)
+        @NotNull(message = AppConstant.NOMBRE_REQUIRED)
+        @Size(min = 2, max = 100)
         String nombre,
 
-        @NotBlank(message = "El apellido no puede estar en blanco")
-        @NotNull(message = "El apellido es obligatorio")
+        @NotBlank(message = AppConstant.APELLIDO_NOT_BLANK)
+        @NotNull(message = AppConstant.APELLIDO_REQUIRED)
+        @Size(min = 2, max = 100)
         String apellido,
 
-        @Email(message = "Debe ser una direccion de email valida")
-        @NotBlank(message = "El email no puede estar en blanco")
+        @Email(message = AppConstant.EMAIL_INVALID)
+        @NotBlank(message = AppConstant.EMAIL_NOT_BLANK)
         String email
 ) {
 

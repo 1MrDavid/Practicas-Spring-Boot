@@ -1,17 +1,18 @@
 package com.cesarlead.DACourses.dto;
 
+import com.cesarlead.DACourses.config.AppConstant;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 public record CursoDTO(
     Long id,
 
-    @NotBlank(message = "El titulo no puede estar en blanco")
-    @NotNull(message = "El titulo es obligatorio")
+    @NotBlank(message = AppConstant.MSG_TITULO_NOT_BLANK)
+    @NotNull(message = AppConstant.MSG_TITULO_REQUIRED)
     String titulo,
 
-    @NotBlank(message = "La descripcion no puede estar en blanco")
-    @NotNull(message = "La descripcion es obligatorio")
+    @NotBlank(message = AppConstant.MSG_DESCRIPCION_NOT_BLANK)
+    @NotNull(message = AppConstant.MSG_DESCRIPCION_REQUIRED)
     String descripcion
 )
 {

@@ -1,6 +1,7 @@
 package com.cesarlead.DACourses.service;
 
 import com.cesarlead.DACourses.client.StudentFeignClient;
+import com.cesarlead.DACourses.config.AppConstant;
 import com.cesarlead.DACourses.dto.CrearInscripcionDTO;
 import com.cesarlead.DACourses.dto.CursoDTO;
 import com.cesarlead.DACourses.dto.EstudianteDTO;
@@ -29,23 +30,17 @@ public class EnrollmentServiceImpl implements EnrollmentService {
 
   // Valida la existencia del estudiante
   public boolean validateStudentById(Long id) {
-    try {
-      log.info("Solicitando informacion del estudiante con ID: " + id);
 
+      // Eliminado el try {} catch {} para manejar de manera mas elegante la funcion
+
+      log.info(AppConstant.LOG_VALIDATE_STUDENT, id);
+
+      // Esta llamada lanzará ResourceNotFoundException si el estudiante no existe
       EstudianteDTO estudiante = studentFeignClient.getStudentByID(id);
 
-      log.info("Estudiante validado exitosamente: {} {}",
-          estudiante.nombre(), estudiante.apellido());
-
+      // Si llega hasta aquí, el estudiante existe
+      log.info(AppConstant.LOG_STUDENT_VALIDATED, estudiante.nombre(), estudiante.apellido());
       return true;
-
-    } catch (ResourceNotFoundException e) {
-      log.error("Estudiante no encontrado: {}", e.getMessage());
-      throw e;
-    } catch (Exception e) {
-      log.error("Error inesperado validando al estudiante: {}", e.getMessage());
-      throw new RuntimeException("Error inesperado validando al estudiante: " + e.getMessage());
-    }
   }
 
   // Crea la inscripcion del curso
@@ -53,11 +48,15 @@ public class EnrollmentServiceImpl implements EnrollmentService {
   @Transactional
   public InscripcionDTO createEnrollment(CrearInscripcionDTO request) {
 
-    log.info("Validando la informacion del curso con ID: " + request.cursoId());
+    log.info(AppConstant.LOG_VALIDATE_COURSE, request.cursoId());
 
+    // Validación del curso
     CursoDTO curso = courseService.findById(request.cursoId());
 
-    boolean existStudent = validateStudentById(request.estudianteId());
+    // Validación del estudiante
+    validateStudentById(request.estudianteId());
+
+    log.info(AppConstant.LOG_ENROLLMENT_CREATING, request.estudianteId(), request.cursoId());
 
     Enrollment inscripcion = new Enrollment();
     inscripcion.setCursoId(request.cursoId());
@@ -65,14 +64,18 @@ public class EnrollmentServiceImpl implements EnrollmentService {
     inscripcion.setFechaInscripcion(LocalDateTime.now());
 
     Enrollment savedEnrollment = enrollmentRepository.save(inscripcion);
+
+    log.info(AppConstant.LOG_ENROLLMENT_SAVED, savedEnrollment.getId());
+
     return mapper.mapToInscripcionDTO(savedEnrollment);
   }
 
+  // Consulta estudiantes de un curso
   @Override
   public List<Long> findEstudiantesFromCurso(Long cursoId) {
+      log.info(AppConstant.LOG_COURSE_STUDENTS_CONSULTED, cursoId);
       return enrollmentRepository.findEstudianteIdByCursoId(cursoId);
   }
-
 }
 
 

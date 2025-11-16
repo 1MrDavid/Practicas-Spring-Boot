@@ -1,15 +1,16 @@
 package com.cesarlead.DACourses.dto;
 
+import com.cesarlead.DACourses.config.AppConstant;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
 public record CrearInscripcionDTO(
-        @NotNull(message = "El id del curso es obligatorio")
-        @Positive(message = "El ID del curso debe ser un número positivo")
+        @NotNull(message = AppConstant.MSG_CURSO_ID_REQUIRED)
+        @Positive(message = AppConstant.MSG_CURSO_ID_POSITIVE)
         Long cursoId,
 
-        @NotNull(message = "El id del estudiante es obligatorio")
-        @Positive(message = "El ID del estudiante debe ser un número positivo")
+        @NotNull(message = AppConstant.MSG_ESTUDIANTE_ID_REQUIRED)
+        @Positive(message = AppConstant.MSG_ESTUDIANTE_ID_POSITIVE)
         Long estudianteId
 ) {
 }
