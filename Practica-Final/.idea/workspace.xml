@@ -5,18 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/client/EnrollmentServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/client/CourseFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/client/CustomErrorDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/client/ProgressFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/client/StudentFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/config/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/config/FeignClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/config/LoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/config/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/dto/CursoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/dto/ErrorResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/dto/EstadisticaEstudianteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/dto/EstudianteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/dto/EventoProgresoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/dto/ReporteAnaliticaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/exception/DuplicateResourceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/exception/ExternalServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/exception/ServiceUnavailableException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/service/ReportServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/config/AppConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/config/AppConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/controller/EnrollmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/controller/EnrollmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/repository/EnrollmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/repository/EnrollmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/service/EnrollmentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/DaReportsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/DaReportsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAReports/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DAReports/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAReports/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DAReports/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAReports/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/DAReports/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,6 +55,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="35Zwcgup5GigbGLLlgtAHuWTbNM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,15 +66,27 @@
   "keyToString": {
     "Application.DaCoursesApplication.executor": "Run",
     "Application.DaProgressApplication.executor": "Run",
+    "Application.DaReportsApplication.executor": "Run",
     "Application.DigitalAcademyApplication.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/david/Desktop/Si/Repositorios/Practicas-Spring-Boot/Practica-Final/DAReports/src/main/java/com/cesarlead/DAReports"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAReports\src\main\java\com\cesarlead\DAReports" />
+      <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAReports\src\main\java\com\cesarlead\DAReports\dto" />
+      <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAReports\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cesarlead.DAReports.dto" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="" />
