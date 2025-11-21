@@ -10,6 +10,7 @@ import com.cesarlead.DAProgress.mapper.MapperProgress;
 import com.cesarlead.DAProgress.model.Progress;
 import com.cesarlead.DAProgress.repository.ProgressRepository;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -27,12 +28,17 @@ public class ProgressServiceImpl implements ProgressService {
     private final CourseServiceClient courseClient;
     private final EnrollmentServiceClient enrollmentClient;
     private final ProgressRepository progressRepository;
+    // Encapsulamiento (private)
     private final MapperProgress mapper;
 
+    // Polimorfismo
     @Override
+    @Transactional
     public EventoProgresoDTO registrarEvento(CrearEventoDTO request) {
 
         log.info("{} registrarEvento", AppConstant.LOG_ENTERING_METHOD);
+
+        // Usando WebClient para consultas
 
         // Validar estudiante
         studentClient.getStudentByID(request.estudianteId()).block();

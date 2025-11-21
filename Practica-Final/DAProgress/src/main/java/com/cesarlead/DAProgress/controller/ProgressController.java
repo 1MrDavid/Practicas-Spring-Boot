@@ -13,21 +13,27 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// Get, Post, Update...
 @RestController
+// PATH base
 @RequestMapping("/api/v1/progreso")
 @Tag(
         name = "API-Progreso",
         description = "Registro de eventos de progreso en cursos"
 )
+// Simple Log 4 Java
 @Slf4j
 @RequiredArgsConstructor
 public class ProgressController {
+
+    //private static final Logger logger = LoggerFactory.getLogger(ProgressController.class);
 
     private final ProgressService progressService;
 

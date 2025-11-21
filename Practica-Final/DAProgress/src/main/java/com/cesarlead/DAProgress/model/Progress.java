@@ -11,8 +11,12 @@ import java.time.LocalDateTime;
 @Table(name = "progress")
 @NoArgsConstructor
 @AllArgsConstructor
+// Getter, Setter, HashMap, toString, Constructors(AllArgs, NoArgs, RequiredArgs)
 @Data
 public class Progress {
+
+    // TODO: Agregar OneToMany, ManyToMany, cascade, etc..
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
@@ -31,4 +35,5 @@ public class Progress {
 
     @Column(nullable = false)
     LocalDateTime timestamp;
+
 }

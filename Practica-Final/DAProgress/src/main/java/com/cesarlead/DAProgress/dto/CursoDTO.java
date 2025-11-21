@@ -4,6 +4,7 @@ import com.cesarlead.DAProgress.config.AppConstant;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+// Inmutabilidad
 public record CursoDTO(
     Long id,
 
