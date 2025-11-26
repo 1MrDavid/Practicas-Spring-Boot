@@ -3,9 +3,12 @@ package com.cesarlead.DAProgress.config;
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
+import org.slf4j.MDC;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.reactive.ReactorClientHttpConnector;
+import org.springframework.web.reactive.function.client.ClientRequest;
+import org.springframework.web.reactive.function.client.ExchangeFilterFunction;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.netty.http.client.HttpClient;
 
@@ -27,5 +30,26 @@ public class WebClientConfig {
 
         return WebClient.builder()
                 .clientConnector(new ReactorClientHttpConnector(httpClient));
+    }
+
+    /**
+     * Filtro para propagar el TraceId desde el MDC hacia cada llamada WebClient
+     */
+    private ExchangeFilterFunction traceIdFilter() {
+        return (request, next) -> {
+
+            String traceId = MDC.get(AppConstant.TRACE_ID_MDC_KEY);
+
+            ClientRequest modifiedRequest =
+                    ClientRequest.from(request)
+                            .headers(headers -> {
+                                if (traceId != null) {
+                                    headers.add(AppConstant.TRACE_ID_HEADER, traceId);
+                                }
+                            })
+                            .build();
+
+            return next.exchange(modifiedRequest);
+        };
     }
 }

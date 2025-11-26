@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/client/FeignTraceIdInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/client/FeignTraceIdInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/config/WebClientConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
