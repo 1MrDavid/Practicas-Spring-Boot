@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/client/FeignTraceIdInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DigitalAcademy/src/main/java/com/cesarlead/DAStudents/client/FeignTraceIdInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/config/FeignClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/DACourses/src/main/java/com/cesarlead/DACourses/config/FeignClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/controller/ProgressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/CursoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/dto/CursoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/model/Progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/model/Progress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/repository/ProgressRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/repository/ProgressRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/service/ProgressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DigitalAcademy/src/test/java/com/cesarlead/DAStudents/controller/StudentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DigitalAcademy/src/test/java/com/cesarlead/DAStudents/controller/StudentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DigitalAcademy/src/test/java/com/cesarlead/DAStudents/service/StudentServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/DigitalAcademy/src/test/java/com/cesarlead/DAStudents/service/StudentServiceImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
