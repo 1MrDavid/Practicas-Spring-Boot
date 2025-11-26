@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="" />
+    <list default="true" id="70a49c89-0381-4e41-ae9a-f34922ed24f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/DAProgress/src/main/java/com/cesarlead/DAProgress/client/FeignTraceIdInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAReports/src/main/java/com/cesarlead/DAReports/client/FeignTraceIdInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAProgress/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DAProgress/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,8 +64,11 @@
       <recent name="C:\Users\david\Desktop\Si\Repositorios\Practicas-Spring-Boot\Practica-Final\DAReports\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cesarlead.DAProgress.config" />
+      <recent name="com.cesarlead.DAProgress.client" />
+      <recent name="com.cesarlead.DAReports.client" />
+      <recent name="com.cesarlead.DAReports.config" />
       <recent name="com.cesarlead.DACourses.client" />
-      <recent name="com.cesarlead.DAReports.dto" />
     </key>
   </component>
   <component name="RunManager">
